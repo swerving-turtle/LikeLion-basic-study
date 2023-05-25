@@ -1,12 +1,22 @@
-body {
-    color: red;
-    background-color: #000;
-    background-image: url('background.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-h1{
-    color: blue;
-    text-align: center;
+body{
+    background: #f4f4f4;
+    font-family: arial, sans-serif;
 }
 
+#container{
+    border: 1px #cccccc solid;
+    padding: 0px 10px;
+    width: 800px;
+    margin: 30px auto;
+}
+
+.highlight{
+    color: red;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.left-side{
+    float: left;
+    width: 50%;
+}
