@@ -1,0 +1,12 @@
+body {
+    color: red;
+    background-color: #000;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+h1{
+    color: blue;
+    text-align: center;
+}
+
