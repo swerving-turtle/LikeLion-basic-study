@@ -110,3 +110,8 @@
 //
 //result = num1 % num2;
 //document.write("the remainder is : " + result + lineBreak);
+
+var base = parseFloat(prompt("밑변 : "));
+var height = parseFloat(prompt("높이 : "));
+result = base * height * 0.5;
+document.write("삼각형의 넓이: " + result + "<br/>");
