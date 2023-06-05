@@ -19,11 +19,11 @@
                 <label for="inputToDo"
                    class="form-label"
                 >
-                <span class="badge badge-pill text-bg-primary pt-2 pb-2">할 일 추가하기</span>
+                    <span class="badge badge-pill text-bg-primary pt-2 pb-2">할 일 추가하기</span>
                 </label>
                 <input type="text"
-                   id="inputToDo"
-                   class="form-control shadow-none"
+                       id="inputToDo"
+                       class="form-control shadow-none"
                 >
                 <button class="btn btn-primary col-12 mt-4"
                         type="submit"
@@ -42,6 +42,7 @@
         let toDoLists = [];
         function add(){
             let toDo = document.getElementById("inputToDo").value;
+            <!--아무것도 입력하지 않으면 추가되지 않음-->
             if (toDo.length > 0){
                 toDoLists.push(toDo);
                 localStorage.setItem('todolists', JSON.stringify(toDoLists));
