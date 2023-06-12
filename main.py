@@ -1,17 +1,8 @@
-class Engine:
-    def start(self):
-        return "Engine started"
-    def stop(self):
-        return "Engine stopped"
+class CustomException(Exception):
+    def __init__(self, message):
+        self.message = message
 
-class Wheels:
-    def rotate(self):
-        return "Wheels are rotating"
-
-class Car(Engine, Wheels):
-    pass
-
-my_car = Car()
-
-print(my_car.start())
-print(my_car.rotate())
+try:
+    raise CustomException("This is a custom exception")
+except CustomException as e:
+    print(f"Error: {e.message}")
